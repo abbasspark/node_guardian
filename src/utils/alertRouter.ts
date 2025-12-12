@@ -196,7 +196,7 @@ export class AlertRouter {
           payload: {
             summary: `Guardian: ${event.type}`,
             severity: 'critical',
-            source: 'node-guardian',
+            source: 'async-guardian',
             custom_details: {
               type: event.type,
               file: event.file,

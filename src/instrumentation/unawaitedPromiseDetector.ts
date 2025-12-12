@@ -99,7 +99,7 @@ export class UnawaitedPromiseDetector {
 
       // CRITICAL FIX: Don't track Guardian's own promises!
       const isGuardianInternal = file && (
-        file.includes('/node-guardian/') ||
+        file.includes('/async-guardian/') ||
         file.includes('/dist/core/') ||
         file.includes('/dist/collector/') ||
         file.includes('/dist/dashboard/') ||

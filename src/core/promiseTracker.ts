@@ -140,7 +140,7 @@ export class PromiseTracker {
 
     // CRITICAL FIX: Don't track Guardian's own promises!
     if (file && (
-      file.includes('/node-guardian/') ||
+      file.includes('/async-guardian/') ||
       file.includes('/dist/core/') ||
       file.includes('/dist/collector/') ||
       file.includes('/dist/dashboard/') ||

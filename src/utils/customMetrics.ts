@@ -280,7 +280,7 @@ export const customMetrics = new CustomMetrics();
  * Usage examples:
  * 
  * ```typescript
- * import { customMetrics } from 'node-guardian';
+ * import { customMetrics } from 'async-guardian';
  * 
  * // Counter
  * customMetrics.incrementCounter('api_requests_total', 1, { endpoint: '/users', method: 'GET' });

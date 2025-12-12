@@ -9,7 +9,7 @@
 
 import { Module, Injectable, Controller, Get } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { GuardianModule, MonitorAsync, GuardianMonitored } from 'node-guardian/nestjs';
+import { GuardianModule, MonitorAsync, GuardianMonitored } from 'async-guardian/nestjs';
 
 // ============================================
 // EXAMPLE 1: Memory Leak (will be detected)

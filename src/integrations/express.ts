@@ -148,8 +148,8 @@ export function trackSlowRequests(thresholdMs: number = 1000) {
  * 
  * ```typescript
  * import express from 'express';
- * import { Guardian } from 'node-guardian';
- * import { guardianMiddleware, guardianErrorHandler, trackSlowRequests } from 'node-guardian/express';
+ * import { Guardian } from 'async-guardian';
+ * import { guardianMiddleware, guardianErrorHandler, trackSlowRequests } from 'async-guardian/express';
  * 
  * const app = express();
  * const guardian = Guardian.create({ mode: 'production' });

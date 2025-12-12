@@ -1,10 +1,10 @@
-# 🛡️ Node Guardian
+# 🛡️ Async Guardian
 
 **Catch memory leaks, deadlocks, blocking code and async bugs — instantly.**
 
 > Like Chrome DevTools for your Node.js backend.
 
-[![npm version](https://img.shields.io/npm/v/node-guardian.svg)](https://www.npmjs.com/package/node-guardian)
+[![npm version](https://img.shields.io/npm/v/async-guardian.svg)](https://www.npmjs.com/package/async-guardian)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🎯 What is Guardian?
@@ -24,9 +24,9 @@ Guardian is a runtime analysis engine that detects:
 ### Installation
 
 \`\`\`bash
-npm install node-guardian
+npm install async-guardian
 # or
-yarn add node-guardian
+yarn add async-guardian
 \`\`\`
 
 ### Basic Usage
@@ -50,7 +50,7 @@ npx guardian doctor
 #### Programmatic
 
 \`\`\`typescript
-import { Guardian } from 'node-guardian';
+import { Guardian } from 'async-guardian';
 
 const guardian = Guardian.getInstance();
 guardian.start();
@@ -62,7 +62,7 @@ guardian.start();
 
 \`\`\`typescript
 // app.module.ts
-import { GuardianModule } from 'node-guardian/nestjs';
+import { GuardianModule } from 'async-guardian/nestjs';
 
 @Module({
   imports: [
@@ -203,7 +203,7 @@ Guardian has first-class support for NestJS:
 ### Method Monitoring
 
 \`\`\`typescript
-import { MonitorAsync } from 'node-guardian/nestjs';
+import { MonitorAsync } from 'async-guardian/nestjs';
 
 @Injectable()
 export class UserService {
@@ -219,7 +219,7 @@ export class UserService {
 ### Class Monitoring
 
 \`\`\`typescript
-import { GuardianMonitored } from 'node-guardian/nestjs';
+import { GuardianMonitored } from 'async-guardian/nestjs';
 
 @GuardianMonitored()
 @Injectable()
@@ -233,7 +233,7 @@ export class PaymentService {
 ### Advanced Config
 
 \`\`\`typescript
-import { Guardian } from 'node-guardian';
+import { Guardian } from 'async-guardian';
 
 const guardian = Guardian.create({
   eventLoop: {
@@ -282,7 +282,7 @@ Features:
 ## 📊 API Usage
 
 \`\`\`typescript
-import { Guardian, EventType } from 'node-guardian';
+import { Guardian, EventType } from 'async-guardian';
 
 const guardian = Guardian.getInstance();
 
@@ -309,8 +309,8 @@ guardian.forceGC();
 
 \`\`\`typescript
 // main.ts
-import { Guardian } from 'node-guardian';
-import { DashboardServer } from 'node-guardian/dashboard';
+import { Guardian } from 'async-guardian';
+import { DashboardServer } from 'async-guardian/dashboard';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

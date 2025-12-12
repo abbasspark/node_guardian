@@ -80,7 +80,7 @@ export class GracefulShutdown {
  * Usage:
  * 
  * ```typescript
- * import { Guardian, GracefulShutdown } from 'node-guardian';
+ * import { Guardian, GracefulShutdown } from 'async-guardian';
  * 
  * const guardian = Guardian.create({ mode: 'production' });
  * guardian.start();
