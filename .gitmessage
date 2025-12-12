@@ -1,0 +1,32 @@
+# <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+
+# Types:
+#   feat:     New feature (minor version)
+#   fix:      Bug fix (patch version)
+#   docs:     Documentation changes
+#   style:    Formatting, missing semi colons, etc
+#   refactor: Code restructuring
+#   perf:     Performance improvements
+#   test:     Adding tests
+#   chore:    Maintenance tasks
+#   ci:       CI/CD changes
+#   build:    Build system changes
+#
+# Breaking Changes:
+#   Add "!" after type: feat!: breaking change
+#   Or add footer: BREAKING CHANGE: description
+#
+# Examples:
+#   feat(alerts): add Slack integration
+#   fix(memory): correct leak detection threshold
+#   docs(readme): update installation instructions
+#   feat!: change API to async
+#
+# Footer examples:
+#   Closes #123
+#   Fixes #456
+#   BREAKING CHANGE: API is now async
