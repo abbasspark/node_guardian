@@ -1,9 +1,31 @@
 {
   "name": "async-guardian",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Async deadlock, memory leak, and event loop monitoring for Node.js - with AI-powered suggestions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    },
+    "./nestjs": {
+      "types": "./dist/integrations/nestjs/module.d.ts",
+      "require": "./dist/integrations/nestjs/module.js",
+      "import": "./dist/integrations/nestjs/module.js"
+    },
+    "./express": {
+      "types": "./dist/integrations/express.d.ts",
+      "require": "./dist/integrations/express.js",
+      "import": "./dist/integrations/express.js"
+    },
+    "./dashboard": {
+      "types": "./dist/dashboard/server.d.ts",
+      "require": "./dist/dashboard/server.js",
+      "import": "./dist/dashboard/server.js"
+    }
+  },
   "bin": {
     "guardian": "./bin/guardian.js"
   },
